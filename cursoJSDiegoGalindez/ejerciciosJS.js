@@ -131,12 +131,12 @@ function mayuscula() {
  document.writeln(mayuscula(resultado));
 
  */
-
+/*
  let ingresar = (window.prompt('Ingresa una palabra o frase en minúscula'));
  let contenido = ingresar.split('Ingresa frase o palabra');
  let convertir = contenido.map(contenido => palabra.chartAt(0).toUpperCase() + palabra.slice(1))
  console.log(convertir.join(' '));
- 
+ */
 
 //9. Revisa si un número dado es múltiplo de 3 o de 7
 
@@ -168,19 +168,34 @@ function digitos(cantidad){
 
 
 //14. Haz una función que lanza un error con el mensaje dado por el usuario
-/*try{
 
-}catch(error){
-
-}*/
+/*
+function error() {
+  let mensaje = window.prompt ('Ingrese su mensaje de error: ');
+  throw new Error(mensaje);
+}
+*/
 
 //15. Extiende la función anterior para atrapar el error e imprimir su mensaje y stack
+/*
 
+try{
+  error()  
+  }catch(Error){
+    document.getElementById('err').innerHTML = Error;
+    document.getElementById()
+  }
+*/
 
 //16. Suma los contenidos de un arreglo de números
+//*refacrtorizar hacer compacto un codigo
+
 
 
 //18. Regresa un arreglo nuevo con el cuadrado de cada valor del arreglo original
+
+
+
 
 //19. Regresa que tipo de ángulo es el dado
 /*
@@ -188,14 +203,55 @@ function digitos(cantidad){
   Recto: 90 grados
   Obtuso: 90 a 180 grados
   Llano: 180 grados
+
+var angulos =Number(window.prompt('Ingresa el numero de grados de un ángulo'));
+
+if (angulos >=0 && angulos <=89) {
+  alert('Ángulo agudo')
+  }
 */
 //20. Regresa un arreglo nuevo sin los valores repetidos de un arreglo original
+
+
 //21. Quita los valores repetidos de un arreglo (sin usar otro arreglo)
+
+
 //22. Convierte un número binario dado por el usuario a decimal
+
+
+
 //23. Convierte un número decimal dado por el usuario a binario, octal y hexadecimal (bases 2, 8 y 16)
+
+
 //24. Regresa la cantidad de valores que comparten dos arreglos diferentes
+// https://codeburst.io/comparison-of-two-arrays-using-javascript-3251d03877fe
+
+
+//const arr1= [1,5,6,7,5,6,5,56,11,78,7,10];
+//const arr2= [1,5,6,7,8,5,6,7,8,10,11,78];
+
+const arr1= [1,2,3,4];
+const arr2= [3,4,5,6,7];
+function compare (arr1,arr2) {
+  const finalarray=[];
+  arr1.forEach((e1)=>arr2.forEach((e2)=>
+      {if(e1 === e2){
+        finalarray.push(e1)
+    }
+   }
+ ));
+ return finalarray;
+}
+
+console.log(compare(arr1,arr2));
+
+
+
 //25. Valida que una cadena dada no tenga espacios en blanco
+  //expresion regular
+
 //26. Dada una cadena, determina su valor de scrabble
+
 /*
   1: E, A, I, O, N, R, T, L, S, U
   2: D, G
@@ -205,7 +261,11 @@ function digitos(cantidad){
   8: J, X
   10: Q, Z
 */
+
 //27. Determina si una cadena dada por el usuario es un acrónimo
+  //solucion primeros dias
 //28. Implementa una lista ligada
+
 //29. Implementa una lista doblemente ligada
+
 //30. Obten el Máximo común divisor de dos números dados
