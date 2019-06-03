@@ -95,31 +95,30 @@ console.log((F-32)*5/9 + ' °F to °C');
 /*
 let a = window.prompt('Accede a la propiedad');
 let o = {};
-o[a] = true
-//o.a = true
+o[a] = true // nombredefinido:true
+//o.a = true //a:true
 
 console.log(o);
-
 */
 
 //7. Realiza la suma de los valores que de el usuario hasta recibir un valor negativo
 
 /*
 let n = Number(window.prompt('Ingresa cantidades a sumar'));
-let ntvo = 0;
+let negt = 0;
 
 while (n >= 0){
-  ntvo += n;
+  negt += n;
   n = Number(window.prompt('Ingresa cantidades a sumar'))
 }
-console.log('Total de suma:' + '' +ntvo);
+console.log('Total de suma: ' + negt);
 */
 
 //8. Convierte a mayúscula la primer letra de cada palabra en una cadena dada por el usuario
 
-/*
-let primerLetra = window.prompt('Ingresa una palabra o frase en minúscula');
 
+let primerLetra = window.prompt('Ingresa una palabra o frase en minúscula');
+/*
 function mayuscula() {
   return resultado
   .toLowerCase()
@@ -129,14 +128,14 @@ function mayuscula() {
   .join(' ');
 }
  document.writeln(mayuscula(resultado));
+*/
+ 
 
- */
-/*
  let ingresar = (window.prompt('Ingresa una palabra o frase en minúscula'));
- let contenido = ingresar.split('Ingresa frase o palabra');
- let convertir = contenido.map(contenido => palabra.chartAt(0).toUpperCase() + palabra.slice(1))
+ let contenido = ingresar.split(' ');
+ let convertir = contenido.map(palabras => palabras.chartAt(0).toUpperCase() + palabras.slice(1))
  console.log(convertir.join(' '));
- */
+ 
 
 //9. Revisa si un número dado es múltiplo de 3 o de 7
 
@@ -262,7 +261,7 @@ console.log(compare(arr1,arr2));
   10: Q, Z
 */
 
-//27. Determina si una cadena dada por el usuario es un acrónimo
+//27. Determina si una cadena dada por el usuario es un palíndromo
   //solucion primeros dias
 //28. Implementa una lista ligada
 
