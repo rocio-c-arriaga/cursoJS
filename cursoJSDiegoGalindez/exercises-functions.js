@@ -74,6 +74,9 @@ var a = 12;
 (function() {
   alert(a);
 })();
+
+// La salida es una alerta de 12, la función llama a la variable definida como numero 12
+
 */
 
 /*
@@ -82,6 +85,9 @@ var a = 5;
   var a = 12;
   alert(a);
 })();
+
+//La salida de la alerta es 12, se declara la variable dentro de la función
+
 */
 
 /*
@@ -93,6 +99,7 @@ var x = (function() {
   });
 })();
 x();
+
 */
 
 /*
@@ -106,6 +113,8 @@ var x = (function() {
   }
 })();
 x();
+//
+
 */
 
 /*

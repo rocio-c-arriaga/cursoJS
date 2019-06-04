@@ -37,7 +37,9 @@ let
 //7. Después debe llamar a un tercer callback con el valor que regresa el segundo.
 
 
-/*
+/////////////////////////////////////////
+
+/* REPASO POR LA TARDE
 let nombres = ['Sandra', 'Liz', 'Ale'];
 undefined
 let despedida = function (persona){}
