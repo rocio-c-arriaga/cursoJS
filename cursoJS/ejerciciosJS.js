@@ -119,7 +119,7 @@ console.log('Total de suma: ' + negt);
 /*
  let ingresar = (window.prompt('Ingresa una palabra o frase en minúscula'));
  let contenido = ingresar.split(' ');
- let convertir = contenido.map(palabras => palabras.charAt().toUpperCase() + palabras.slice(1))
+ let convertir = contenido.map(palabras => palabras.charAt(0).toUpperCase() + palabras.slice(1))
  console.log(convertir.join(' '));
  */
 
