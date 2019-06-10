@@ -135,9 +135,9 @@ alert(convertir);
 //9. Revisa si un número dado es múltiplo de 3 o de 7
 /*
 NO FUNCIONA, TAL VEZ SEA EL Number, ME ARROJA QUE VALOR YA ESTA DECLARADO
+//let valor = Number(window.prompt('Ingresa número a revisar'));
+//let multiplo = Number(window.prompt('Ingresa multiplo a revisar'));
 function revisar(valor,multiplo){
-  let valor = Number(window.prompt('Ingresa número a revisar'));
-  let multiplo = Number(window.prompt('Ingresa multiplo a revisar'));
   resto = valor % multiplo;
   if (resto % 3 == 0){
     console.log('El número '+ valor + 'es múltiplo de ' + multiplo);
@@ -219,16 +219,18 @@ try {
 //16. Suma los contenidos de un arreglo de números
 //*refactorizar hacer compacto un codigo
 /*
-var array = [1, 2, 3];
-
-for (var i = 0, sum = 0; i < array.length; sum += array[i++]);
-
-console.log(sum);
+let total = [3, 5, 6, 7].reduce(function(a,b){return a + b; });
+console.log(total)
 */
 
 //17. Regresa un arreglo nuevo con el cuadrado de cada valor del arreglo original
-
-
+/*
+var numbers = [5, 4, 2, 10];
+var dobles  = numbers.map(function(num){
+  return num * num;
+  });
+console.log(dobles);
+*/
 
 //18. Regresa que tipo de ángulo es el dado
 
